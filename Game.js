@@ -4,7 +4,9 @@ const Board = () => {
     return (
         <div className="game-board" 
         onClick = {()=>{
-            setPlayer(player + 1)
+            if (player == 0){setPlayer(1)}
+            else {setPlayer(0)}
+            
             status = `Player ${player}`
         }}
         >
